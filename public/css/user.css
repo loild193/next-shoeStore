@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Myriadpro-Regular;
+    src: url(../font/Myriadpro-Regular.otf);
+  }
+  @font-face {
+    font-family: Myriadpro-Bold;
+    src: url(../font/Myriadpro-Bold.otf);
+  }
+  @font-face {
+    font-family: Myriadpro-Semibold;
+    src: url(../font/Myriadpro-Semibold.otf);
+  }
+  @font-face {
+    font-family: Myriadpro-Light;
+    src: url(../font/MyriadPro-Light.otf);
+  }
+  
+  body {
+    position: relative;
+  }
+  
+  #header {
+    width: 100%;
+    height: 135px;
+    border-bottom: 2px solid #ffc900;
+    display: flex;
+    background-color: #C33C54;
+  }
+  #header img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #header h1 {
+    color: #ffc900;
+    line-height: 92px;
+    font-family: 'Myriadpro-Bold', sans-serif;
+    margin-left: calc(50vw - 275px);
+  }
+  #header #menu .fa-bars {
+    display: none;
+  }
+  #navbar {
+    display: inline-block;
+    margin-left: calc(50vw - 577px);
+  }
+  #navbar ul {
+    border: 2px solid #ebebeb;
+    display: inline-block;
+    border-bottom: none;
+  }
+  #navbar ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    /* margin: 0px 65px; */
+    padding: 10px 32px;
+    /* border-right: 1px solid #ebebeb; */
+    font-weight: bold;
+  }
+  #navbar ul li:last-child {
+    border-right: none;
+  }
+  #navbar a {
+    text-decoration: none;
+    /* color: rgb(255, 217, 4); */
+    color: black;
+    font-family: "Myriadpro-Bold", sans-serif;
+  }
+  #navbar li#loaiGiay {
+    position: relative;
+  }
+  #navbar li#loaiGiay > ul {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 129px;
+    border: 2px solid #ebebeb;
+    /* border-top: none; */
+  }
+  #navbar input {
+    margin-left: 28px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: none;
+    line-height: 41px; 
+    background: #efefef;
+    border-radius: 4px;
+  }
+  #navbar ul li:hover {
+    background-color: #ebebeb;
+  }
+  #navbar ul li:hover > a {
+    color: black;
+  }
+  /* #navbar ul li#loaiGiay:hover > ul {
+    display: block;
+  }*/
+  #navbar ul li#loaiGiay > ul > li {
+    padding: 10px 10px;
+    width: 100%;
+    border-top: none;
+  }
+  #navbar ul li#loaiGiay > ul > li > a {
+    margin-left: 8px;
+    font-size: 15px;
+  }
+  #navbar #search {
+    position: relative;
+    display: inline-block;
+  }
+  #navbar #search i {
+    position: absolute;
+    left: calc(100% - 30px);
+    top: calc(50% - 8px);
+  }
+  #header #navbar .icon {
+    position: relative;
+  }
+  #header #navbar .icon .fa-shopping-cart {
+    position: absolute;
+    left: 12px;
+    top: -7px;
+  }
+  #header #navbar .icon .fa-user {
+    position: absolute;
+    left: 70px;
+    top: -7px;
+  }
+
+  /* form-login */
+  form {
+    width: 1000px;
+    margin: 0px auto;
+  }
+  form input {
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  form button {
+    height: 28px;
+    width: 64px;
+    border-radius: 4px;
+    border: none;
+    background-color: #31e4ec;
+    margin-left: 125px;
+  }
+  /* footer */
+  #footer {
+    background-color: #AEF3E7;;
+  }
+  #footer div {
+    width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #footer div i {
+    margin: 0px 8px;
+    color: #C33C54;
+  }
+  #footer div p { 
+    margin-top: 20px;
+    font-family: "Myriadpro-Light", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 35px;
+    color: #C33C54;
+  }
+  
+  /* messenger */
+  #messenger {
+    position: fixed;
+    top: 90%;
+    left: 92%;
+  }
+  #messenger .exit {
+    position: absolute;
+    left: 92%;
+    top: 6%;
+    text-transform: uppercase;
+    font-family: "Myriadpro-Bold", sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  #messenger div {
+    width: 270px;
+    height: 130px;
+    border: 1px solid #8e8282;
+    border-radius: 8px;
+    position: absolute;
+    top: -210%;
+    left: -330%;
+    background-color: #f5f5f5;
+  }
+  #messenger div p {
+    margin: 28px 13px 20px 13px;
+    font-family: "Myriadpro-Regular", sans-serif;
+    font-size: 15px;
+  }
+  #messenger div .link {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: #329AF0;
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Myriadpro-Bold", sans-serif;
+    margin: 0px 13px;
+  }
+  #messenger > a {
+    color: #329AF0;
+  }
+  
+  /* responsive */
+  /* 960 -> 1200 */
+  @media screen and (max-width: 1200px){
+    /* header */
+    #header img {
+      max-width: 70%;
+      max-height: 70%;
+    }
+    #navbar ul li {
+      padding: 10px 25px;
+    }
+    #navbar a {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    #navbar li#loaiGiay > ul {
+      width: 117px;
+    }
+    #navbar ul li#loaiGiay > ul > li > a {
+      margin-left: 4px;
+      font-size: 14px;
+    }
+  
+    /* footer */
+    #footer div {
+      width: 900px;
+    }
+    /* messenger */
+    #messenger {
+      top: 85%;
+      left: 87%;
+    }
+  }
+  
+  /* 768 -> 960 */
+  @media screen and (max-width: 960px) {
+    /* header */
+    #header {
+      height: 100px;
+    }
+    #header img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    #header h1 {
+      line-height: 70px;
+      font-size: 26px;
+      margin-left: calc(50vw - 245px);
+    }
+    #header #menu .fa-bars {
+      display: inline-block;
+    }
+    #navbar {
+      position: absolute;
+      left: 305px;
+      top: 100px;
+      display: none;
+      height: 255px;
+      background-color: wheat;
+      border-radius: 12px;
+    }
+    #navbar ul {
+      display: block;
+    }
+    #navbar ul li {
+      display: block;
+    }
+    #navbar #search {
+      display: block;
+    }
+    #navbar input {
+      margin-left: 21px;
+      margin-right: 10px;
+    }
+    #navbar li#loaiGiay > ul {
+      top: 0px;
+      left: 235px;
+      background-color: wheat;
+      border-radius: 6px;
+    }
+    #header #navbar .icon .fa-shopping-cart {
+      left: 7px;
+      top: 12px;
+    }
+    #header #navbar .icon .fa-user {
+      left: 75px;
+      top: 13px;
+    }
+
+    /* footer */
+    #footer div {
+      width: 700px;
+    }
+  
+    /* messenger */
+    #messenger {
+      top: 79%;
+    }
+  }
+  
+  /* 500 -> 768px */
+  @media screen and (max-width: 768px){
+    /* header */
+    #header {
+      display: block;
+    }
+    #header img {
+      float: right;
+    }
+    #header h1 {
+      line-height: 69px;
+      font-size: 24px;
+      margin-left: calc(50vw - 210px);
+    }
+    #navbar {
+      left: 325px;
+    }
+  
+    /* footer */
+    #footer div {
+      max-width: 100%;
+    }
+  
+    /* messenger */
+    #messenger {
+      top: 85%;
+      left: 83%;
+    }
+  }
+  
+  /* < 500 */
+  @media screen and (max-width: 500px){
+    /* header */
+    #header #menu {
+      padding-top: 8px;
+    }
+    #header h1 {
+      line-height: 31px;
+      font-size: 21px;
+      text-align: center;
+      margin-left: 9px;
+    }
+    #navbar {
+      left: 388px;
+    }
+  
+    /* footer */
+    #footer div p {
+      font-size: 20px;
+    }
+  
+    /* messenger */
+    #messenger a i {
+      font-size: 3em;
+    }
+    #messenger div {
+      top: -270%;
+      left: -460%;
+    }
+  }

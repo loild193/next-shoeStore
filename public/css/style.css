@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Myriadpro-Regular;
+  src: url(../font/Myriadpro-Regular.otf);
+}
+@font-face {
+  font-family: Myriadpro-Bold;
+  src: url(../font/Myriadpro-Bold.otf);
+}
+@font-face {
+  font-family: Myriadpro-Semibold;
+  src: url(../font/Myriadpro-Semibold.otf);
+}
+@font-face {
+  font-family: Myriadpro-Light;
+  src: url(../font/MyriadPro-Light.otf);
+}
+
+body {
+  position: relative;
+}
+/* body::after {
+  content: "";
+  background: url(./images/bg);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
+
+#header {
+  width: 100%;
+  height: 135px;
+  border-bottom: 2px solid #ffc900;
+  display: flex;
+  background-color: #C33C54;
+}
+#header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#header h1 {
+  color: #ffc900;
+  line-height: 92px;
+  font-family: 'Myriadpro-Bold', sans-serif;
+  margin-left: calc(50vw - 275px);
+}
+#header #menu .fa-bars {
+  display: none;
+}
+#navbar {
+  display: inline-block;
+  margin-left: calc(50vw - 577px);
+}
+#navbar ul {
+  border: 2px solid #ebebeb;
+  display: inline-block;
+  border-bottom: none;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  /* margin: 0px 65px; */
+  padding: 10px 32px;
+  /* border-right: 1px solid #ebebeb; */
+  font-weight: bold;
+}
+#navbar ul li:last-child {
+  border-right: none;
+}
+#navbar a {
+  text-decoration: none;
+  /* color: rgb(255, 217, 4); */
+  color: black;
+  font-family: "Myriadpro-Bold", sans-serif;
+}
+#navbar li#loaiGiay {
+  position: relative;
+}
+#navbar li#loaiGiay > ul {
+  /* display: none; */
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 129px;
+  border: 2px solid #ebebeb;
+  /* border-top: none; */
+}
+#navbar input {
+  margin-left: 28px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: none;
+  line-height: 41px; 
+  background: #efefef;
+  border-radius: 4px;
+}
+#navbar ul li:hover {
+  background-color: #ebebeb;
+}
+#navbar ul li:hover > a {
+  color: black;
+}
+/* #navbar ul li#loaiGiay:hover > ul {
+  display: block;
+}*/
+#navbar ul li#loaiGiay > ul > li {
+  padding: 10px 10px;
+  width: 100%;
+  border-top: none;
+}
+#navbar ul li#loaiGiay > ul > li > a {
+  margin-left: 8px;
+  font-size: 15px;
+}
+#navbar #search {
+  position: relative;
+  display: inline-block;
+}
+#navbar #search i {
+  position: absolute;
+  left: calc(100% - 30px);
+  top: calc(50% - 8px);
+}
+#header #navbar .icon {
+  position: relative;
+}
+#header #navbar .icon .fa-shopping-cart {
+  position: absolute;
+  left: 12px;
+  top: -7px;
+}
+#header #navbar .icon .fa-user {
+  position: absolute;
+  left: 70px;
+  top: -7px;
+}
+#header #navbar #login {
+  position: absolute;
+  /* display: none; */
+  left: 40px;
+  top: 40px;
+}
+#header #navbar #register {
+  position: absolute;
+  /* display: none; */
+  left: 110px;
+  top: 40px;
+}
+
+/* content */
+#content #newShoes {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #8EE3EF;
+}
+.title {
+  margin-left: calc(50vw - 550px);
+  margin-bottom: 10px;
+}
+.title h2 {
+  text-transform: uppercase;
+  font-family: "Myriadpro-Bold", sans-serif;
+  display: inline;
+  font-size: 30px;
+  border-left: 10px solid #ebebeb;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+#content #newShoes #mauGiay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 1150px;
+}
+#content #newShoes #mauGiay .giay {
+  margin: 20px;
+  width: 270px;
+  padding: 20px;
+  transition: ease-in 0.3s;
+}
+#content #newShoes #mauGiay .giay h3 {
+  margin-top: 10px;
+}
+#content #newShoes #mauGiay .giay h3 a {
+  text-decoration: none;
+  font-family: 'Myriadpro-Bold', sans-serif;
+  color: black;
+}
+#content #newShoes #mauGiay .giay p {
+  font-family: "Myriadpro-Regular", sans-serif;
+}
+#content #newShoes #mauGiay .giay img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#content #newShoes #mauGiay .giay:hover {
+  padding: 0px;
+}
+
+/* content > news */
+#content #news {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* border-bottom: 1px solid #a0a0a0; */
+  background-color: rgb(145, 177, 204);
+}
+#content #news #thongTin {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 1000px;
+}
+#content #news #thongTin div {
+  margin: 20px;
+}
+#content #news #thongTin a {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f7a2a2;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: red;
+}
+
+/* contact */
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #37718E;
+}
+#contact #info {
+  width: 1055px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#contact #info > div:first-child {
+  padding-top: 140px;
+}
+#contact #info > div:first-child p {
+  font-family: "Myriadpro-Regular", sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+}
+#contact #info > div:first-child p a {
+  font-family: "Myriadpro-Regular", sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #ff5400;
+}
+
+/* footer */
+#footer {
+  background-color: #AEF3E7;
+}
+#footer div {
+  width: 1000px;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer div i {
+  margin: 0px 8px;
+  color: #C33C54;
+}
+#footer div p { 
+  margin-top: 20px;
+  font-family: "Myriadpro-Light", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 35px;
+  color: #C33C54;
+}
+
+/* messenger */
+#messenger {
+  position: fixed;
+  top: 90%;
+  left: 92%;
+}
+#messenger .exit {
+  position: absolute;
+  left: 92%;
+  top: 6%;
+  text-transform: uppercase;
+  font-family: "Myriadpro-Bold", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+#messenger div {
+  width: 270px;
+  height: 130px;
+  border: 1px solid #8e8282;
+  border-radius: 8px;
+  position: absolute;
+  top: -210%;
+  left: -330%;
+  background-color: #f5f5f5;
+}
+#messenger div p {
+  margin: 28px 13px 20px 13px;
+  font-family: "Myriadpro-Regular", sans-serif;
+  font-size: 15px;
+}
+#messenger div .link {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #329AF0;
+  width: 90%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Myriadpro-Bold", sans-serif;
+  margin: 0px 13px;
+}
+#messenger > a {
+  color: #329AF0;
+}
+
+/* responsive */
+/* 960 -> 1200 */
+@media screen and (max-width: 1200px){
+  /* header */
+  #header img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  #navbar ul li {
+    padding: 10px 25px;
+  }
+  #navbar a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  #navbar li#loaiGiay > ul {
+    width: 117px;
+  }
+  #navbar ul li#loaiGiay > ul > li > a {
+    margin-left: 4px;
+    font-size: 14px;
+  }
+
+  /* content */
+  .title {
+    margin-left: 35px;
+  }
+  #content #newShoes #mauGiay {
+    width: 950px;
+  }
+  #content #newShoes #mauGiay .giay {
+    width: 250px;
+  }
+  #content #news #thongTin {
+    width: 868px;
+  }
+
+  /* contact */
+  #contact #info {
+    width: 855px;
+  }
+  #contact #maqp iframe {
+    width: 450px;
+    height: 338px;
+  }
+
+  /* footer */
+  #footer div {
+    width: 900px;
+  }
+  /* messenger */
+  #messenger {
+    top: 85%;
+    left: 87%;
+  }
+}
+
+/* 768 -> 960 */
+@media screen and (max-width: 960px) {
+  /* header */
+  #header {
+    height: 100px;
+  }
+  #header img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #header h1 {
+    line-height: 70px;
+    font-size: 26px;
+    margin-left: calc(50vw - 245px);
+  }
+  #header #menu .fa-bars {
+    display: inline-block;
+  }
+  #navbar {
+    position: absolute;
+    left: 305px;
+    top: 100px;
+    display: none;
+    height: 255px;
+    background-color: wheat;
+    border-radius: 12px;
+  }
+  #navbar ul {
+    display: block;
+  }
+  #navbar ul li {
+    display: block;
+  }
+  #navbar #search {
+    display: block;
+  }
+  #navbar input {
+    margin-left: 21px;
+    margin-right: 10px;
+  }
+  #navbar li#loaiGiay > ul {
+    top: 0px;
+    left: 235px;
+    background-color: wheat;
+    border-radius: 6px;
+  }
+  #header #navbar .icon .fa-shopping-cart {
+    left: 7px;
+    top: 12px;
+  }
+  #header #navbar .icon .fa-user {
+    left: 75px;
+    top: 13px;
+  }
+  /* content */
+  .title {
+    text-align: center;
+  }
+  #content #newShoes #mauGiay {
+    width: 700px;
+  }
+  #content #news #thongTin {
+    width: 690px;
+  }
+
+  /* map */
+  #map {
+    padding-top: 60px;
+  }
+  #map iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* footer */
+  #footer div {
+    width: 700px;
+  }
+
+  /* messenger */
+  #messenger {
+    top: 79%;
+  }
+}
+
+/* 500 -> 768px */
+@media screen and (max-width: 768px){
+  /* header */
+  #header {
+    display: block;
+  }
+  #header img {
+    float: right;
+  }
+  #header h1 {
+    line-height: 69px;
+    font-size: 24px;
+    margin-left: calc(50vw - 210px);
+  }
+  #navbar {
+    left: 325px;
+  }
+
+  /* content */
+  #content #newShoes #mauGiay {
+    width: 500px;
+  }
+  #content #newShoes #mauGiay .giay {
+    width: 200px;
+  }
+  #content #newShoes #mauGiay .giay h3 a {
+    font-size: 15px;
+  }
+  #content #news #thongTin {
+    width: 380px;
+    flex-wrap: wrap;
+  }
+  #content #news #thongTin div:last-child {
+    margin-left: 100px;
+  }
+  #content #news #thongTin div:last-child a {
+    margin-left: 25px;
+  }
+  #contact #info {
+    display: block;
+    width: 500px;
+  }
+  #contact #info > div:first-child {
+    padding-top: 25px;
+    text-align: center;
+  }
+  #map {
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+  #map iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* footer */
+  #footer div {
+    max-width: 100%;
+  }
+
+  /* messenger */
+  #messenger {
+    top: 85%;
+    left: 83%;
+  }
+}
+
+/* < 500 */
+@media screen and (max-width: 500px){
+  /* header */
+  #header #menu {
+    padding-top: 8px;
+  }
+  #header h1 {
+    line-height: 31px;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 9px;
+  }
+  #navbar {
+    left: 388px;
+  }
+
+  /* content */
+  .title h2 {
+    font-size: 29px;
+  }
+  #content #newShoes {
+    padding-top: 60px;
+  }
+  #content #newShoes #mauGiay {
+    width: 375px;
+  }
+  #content #newShoes #mauGiay .giay {
+    width: 160px;
+    margin: 10px;
+  }
+  #content #news {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* contact */
+  #contact #info {
+    max-width: 100%;
+  }
+  #contact #info > div:first-child p {
+    font-size: 19px;
+  }
+  #map {
+    padding-top: 30px;
+    padding-left: 41px;
+  }
+  #map iframe {
+    width: 300px;
+    height: 225px;
+  }
+
+  /* footer */
+  #footer div p {
+    font-size: 20px;
+  }
+
+  /* messenger */
+  #messenger a i {
+    font-size: 3em;
+  }
+  #messenger div {
+    top: -270%;
+    left: -460%;
+  }
+}
