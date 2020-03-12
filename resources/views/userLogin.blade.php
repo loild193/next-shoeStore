@@ -44,16 +44,14 @@
     </div> 
   
     <div id="form">
-        <form action="{{ route('users.store') }}" method="post">
+        <form action="{{ route('check') }}" enctype="multipart/form-data" method="POST">
             @csrf
-            <h2>Register</h2> 
-            <label>Name</label>
-            <input type="text" name="name" placeholder="Name..."/></br>   
+            <h2>Login</h2> 
             <label>Email</label>
             <input type="text" name="email" placeholder="Email..."/></br>
             <label>Password</label>
             <input type="password" name="password" placeholder="Password..."/></br>
-            <button type="submit" onclick="alert('Sign Up successfully!!');">Sign Up</button>
+            <button type="submit">Sign In</button>
         </form>
     </div> 
 

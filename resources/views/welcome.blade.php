@@ -17,7 +17,7 @@
         <a href="#"><i class="fas fa-bars fa-2x"></i></a>
         <div id="navbar">
           <ul>
-            <li><a href="./welcome">Trang Chu</a></li>
+            <li><a href="./">Trang Chu</a></li>
             <li id="loaiGiay" class="theLoai">
               <a href="#" class="theLoai">The Loai</a>
               <ul style="display: none;">
@@ -34,11 +34,11 @@
             <a href="#"><i class="fas fa-search"></i></a>
           </div>
           <a href="#" class="icon"><i class="fas fa-shopping-cart fa-2x" style="margin-left: 15px;"></i></a>
-          <a href="./user" class="icon">
+          <div href="#" class="icon-user">
             <i class="fas fa-user fa-2x" style="margin-left: 15px;"></i>
-            <span id="login" style="display: none">Login</span>
-            <span id="register" style="display: none">Register</span>
-          </a>
+            <a href="./userLogin" id="login" style="display: none">Login</a>
+            <a href="./user" id="register" style="display: none">Register</a>
+          </div>
         </div>
       </div>
     </div> 

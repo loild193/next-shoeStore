@@ -19,5 +19,15 @@ Route::get('/', function () {
 Route::get('/user', function () {
     return view('user');
 });
+// Route::get('/userLogin', function () {
+//     return view('userLogin');
+// })->name('userLogin');
+//Route::get('/userLogin', 'UserController@check');
+Route::group(['prefix' => '/userLogin'], function(){
+    Route::get('/', function(){
+        return view('userLogin');
+    })->name('userLogin');
+    Route::post('/', 'UserController@check')->name('check');
+});
 
 Route::resource('users','UserController');

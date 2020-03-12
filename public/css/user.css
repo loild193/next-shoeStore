@@ -44,9 +44,13 @@
   #header #menu .fa-bars {
     display: none;
   }
+  #header #menu {
+    width: 100%; 
+  }
   #navbar {
     display: inline-block;
     margin-left: calc(50vw - 577px);
+    width: 100%;
   }
   #navbar ul {
     border: 2px solid #ebebeb;
@@ -122,15 +126,34 @@
   #header #navbar .icon {
     position: relative;
   }
+  #header #navbar .icon-user {
+    position: relative;
+    display: inline-block;
+    margin-left: 75px;
+  }
   #header #navbar .icon .fa-shopping-cart {
     position: absolute;
     left: 12px;
     top: -7px;
   }
-  #header #navbar .icon .fa-user {
+  #header #navbar .icon-user .fa-user {
     position: absolute;
-    left: 70px;
-    top: -7px;
+    left: 0px;
+    top: -19px;
+  }
+  #header #navbar #login {
+    position: absolute;
+    /* display: none; */
+    left: -40px;
+    top: 27px;
+    padding: 14px;
+  }
+  #header #navbar #register {
+    position: absolute;
+    /* display: none; */
+    left: 24px;
+    top: 27px;
+    padding: 14px;
   }
 
   /* form-login */

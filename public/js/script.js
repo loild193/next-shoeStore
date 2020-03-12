@@ -17,7 +17,7 @@ $(document).ready(function(){
     appearUl = true;
     // console.log(inLoaiGiayUl, inLoaiGiay);
   });
-  $('#loaiGiay > ul').mouseleave(function(event){
+  $('#loaiGiay > ul').mouseleave(function(){
     // event.stopPropagation();
     // console.log(inLoaiGiayUl, inLoaiGiay);
     inLoaiGiayUl = false;
@@ -31,16 +31,21 @@ $(document).ready(function(){
   });
 
   // register and login
-  var userAppear = false;
-  var 
+
   $('.fa-user').mouseenter(function(event){
     event.stopPropagation();
-    $(this).siblings('span').fadeIn();
+    $(this).siblings('a').fadeIn();
   });
-  $('.fa-user').mouseleave(function(event){
+
+  $('#login, #register').mouseleave(function(){
+    $('#login, #register').fadeOut();
+  });
+
+  $('#menu').click(function(event){
     event.stopPropagation();
-    $(this).siblings('span').fadeOut();
+    $('#login, #register').fadeOut();
   });
+  
 
   // fix position navbar menu khi cuon chuot xuong
   // $(document).scroll(function(){
