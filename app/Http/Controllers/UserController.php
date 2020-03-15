@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Http\Requests\LoginRequest;
 
 class UserController extends Controller
 {
@@ -18,21 +19,21 @@ class UserController extends Controller
 
     User::create($request->all());
     
-    return view('welcome');
+    return redirect()->route('welcome', ['message' => $request->name]);
   }
 
   // check login
-  public function check(Request $request) {
+  public function check(LoginRequest $request) {
     if (User::where('email', $request->email)->count() == 0) {
-      return 'Sai email';
+      return view('userLogin', ['emailWrong' => 'Email khong ton tai!']);
     }
     $users = User::where('email', $request->email)->get();
     foreach ($users as $user) {
       if ($user->password == $request->password) {
-        return view('welcome');
+        return view('welcome', ['message' => $user->name]);
       }
       else {
-        return 'Sai password';
+        return view('userLogin', ['passwordWrong' => 'PAssword sai!']);
       }
     }
     // if ($user->password == $request->password) {

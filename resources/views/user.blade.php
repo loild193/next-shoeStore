@@ -53,7 +53,7 @@
             <input type="text" name="email" placeholder="Email..."/></br>
             <label>Password</label>
             <input type="password" name="password" placeholder="Password..."/></br>
-            <button type="submit" onclick="alert('Sign Up successfully!!');">Sign Up</button>
+            <button type="submit">Sign Up</button>
         </form>
     </div> 
 

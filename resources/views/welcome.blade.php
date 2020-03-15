@@ -39,6 +39,7 @@
             <a href="./userLogin" id="login" style="display: none">Login</a>
             <a href="./user" id="register" style="display: none">Register</a>
           </div>
+          <h3>{{ $message ?? '' }}</h3>
         </div>
       </div>
     </div> 
