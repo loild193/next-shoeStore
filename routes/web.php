@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 Route::get('/user', function () {
-    return view('user');
+    return view('users.user');
 });
 // Route::get('/userLogin', function () {
 //     return view('userLogin');
@@ -25,7 +25,7 @@ Route::get('/user', function () {
 //Route::get('/userLogin', 'UserController@check');
 Route::group(['prefix' => '/userLogin'], function(){
     Route::get('/', function(){
-        return view('userLogin');
+        return view('users.userLogin');
     })->name('userLogin');
     Route::post('/', 'UserController@check')->name('check');
 });
