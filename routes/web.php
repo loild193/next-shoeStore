@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('mainpage.main');
 })->name('welcome');
 Route::get('/user', function () {
     return view('users.user');
-});
+})->name('register');
 // Route::get('/userLogin', function () {
 //     return view('userLogin');
 // })->name('userLogin');

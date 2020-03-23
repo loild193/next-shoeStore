@@ -1,6 +1,6 @@
-@extends('welcome')
+@extends('layouts.master')
 
-@section('content-map')
+@section('content')
 
   <div id="content">
     <!-- Cac mau giay moi nhap ve -->

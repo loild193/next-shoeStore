@@ -38,13 +38,15 @@
           <div href="#" class="icon-user">
             <i class="fas fa-user fa-2x" style="margin-left: 15px;"></i>
             <a href="{{ route('userLogin')}}" id="login" style="display: none">Login</a>
-            <a href="./user" id="register" style="display: none">Register</a>
+            <a href="{{ route('register') }}" id="register" style="display: none">Register</a>
           </div>
         </div>
       </div>
     </div> 
+
+    @yield('login-register')
   
-    @yield('content-map')
+    @yield('content')
 
     <div id="footer">
       <div>

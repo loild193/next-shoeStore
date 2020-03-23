@@ -158,8 +158,20 @@
 
   /* form-login */
   form {
-    width: 1000px;
-    margin: 0px auto;
+    width: 365px;
+    margin: 120px auto;
+    border: 1px solid black;
+    text-align: center;
+    padding: 100px 0px;
+    background-color: rgb(235, 235, 235);
+  }
+  form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  form label {
+    font-size: 19px;
+    text-align: left;
   }
   form input {
     line-height: 36px;
@@ -174,7 +186,6 @@
     border-radius: 4px;
     border: none;
     background-color: #31e4ec;
-    margin-left: 125px;
   }
   /* footer */
   #footer {
