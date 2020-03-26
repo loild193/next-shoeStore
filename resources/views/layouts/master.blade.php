@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/user.css') }}">
+  <!-- <link rel="stylesheet" type="text/css" href="css/app.css"> -->
   <title>Shoes Store</title>
 </head>
 <body>
